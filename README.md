@@ -30,8 +30,11 @@ Unfortunately, the local PC does not reflect the
 **Screenshots**
 
 C program, x86-64, SIMD YMM register (in order)
-Small sized
-![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/f7bfadb0-c623-4091-a35a-cd16dbc2a271)
+
+
+Small sized (10,000)
+![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/2c47f400-0db7-4d72-9102-ba015d12ffbc)
+
 2^20
 ![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/2fd540fa-eef7-4a15-ba7e-50620f13e989)
 2^24
