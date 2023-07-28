@@ -40,47 +40,40 @@ The ordering of kernel run time is as follows from fastest to slowest: SIMD, CUD
 
 **Screenshots**
 
-C program, x86-64, SIMD YMM register (in order)
+C program, x86-64, SIMD YMM register, CUDA (in order)
 
 
 Small sized (10,000)
 ![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/2c47f400-0db7-4d72-9102-ba015d12ffbc)
 
-Single runs:
-2^20
-![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/2021808c-7a9b-417b-8db3-fab6196658a0)
-2^24
-![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/1c07c42d-460b-461b-94eb-076624a08ae0)
-2^28
-![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/c8314767-ff90-4638-8011-936d9b85f1b6)
-
 Average of 30 runs:
 2^20
 
 ![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/c8a20486-75ad-4042-95b0-5a5e3912a508)
-
-![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/4c084638-5750-4a50-9b62-1db4c63fd2b9)
-![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/6561dae0-1b10-4ecf-a9f5-0eec9b4791f0)
-![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/70155808-40d1-4d6d-a040-506d2e461abd)
-2^24
-
-![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/59e11a29-117d-4740-bd8a-9e8e082b2420)
-![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/fdfffcb9-bc2b-409c-80aa-ec181b19a32d)
-![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/fd0efdce-091c-4d53-a284-d197c2adf42e)
-2^28
-
-
-
-
-CUDA
-2^20
-![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/810b51e7-52bc-4834-a758-a240f77b2f53)
+![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/11178b84-c53e-43ee-a766-2070e04e0937)
+![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/e433241a-e1a1-4084-8214-4e956e00348a)
+![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/f4e0c7ab-07fc-49cd-9006-773ba38cc2ce)
 
 2^24
-![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/b75d6d58-232b-459c-91a4-9f29ec70157c)
 
-2^28
-![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/6dc9410c-4aad-4e33-80c3-7e891aee5f84)
+![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/05ad7a9e-17b7-4826-9734-fb2d84446e0a)
+![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/f0475b65-19b9-49f2-b9a1-0e3237a8f56e)
+![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/5fac3f90-32d6-4849-872b-3301d15588ec)
+![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/82720669-b140-4d10-93e3-7440b5aeedb4)
+
+
+2^28*
+
+(30 loops of 2^28 crashed the PC, hence showing below 2^27, aligned in CUDA to show 2^27)
+
+![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/c7035589-755a-4a7b-9691-f37a25f80191)
+![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/a8d2fb97-453c-40ab-bd42-c9341a7df82a)
+
+![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/a0bd2e52-337f-4d03-87e7-64c23320523f)
+
+
+
+
 
 
 
