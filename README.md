@@ -46,6 +46,7 @@ C program, x86-64, SIMD YMM register, CUDA (in order)
 
 
 Small sized (10,000)
+
 ![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/17066e83-f6a3-4f7e-865f-54f2a216c65c)
 ![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/bde7a502-5e82-4727-a207-31f555560736)
 ![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/34ce7f37-aaf0-4dd6-aac7-a7f3c483f705)
