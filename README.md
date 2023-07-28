@@ -6,37 +6,38 @@ CUDA link: https://colab.research.google.com/drive/1DjYHZVWW6QBM49MAIFgJGM9QdkUp
 **Comparative Execution Time (Average from 30 runs) of Different Kernels**
 
 **2^20**
-C: 1033.33 microseconds
+C: 1400.00 microseconds
 
-x86-64: 633.33
+x86-64: 766.67 microseconds
 
-x86 SIMD: 333.33
+x86 SIMD: 533.33 microseconds
 
-CUDA:
+CUDA: 1859.8 + 394.0 (overhead) = 2253.80 microseconds
 
 **2^24**
-C:
+C: 22366.67 microseconds
 
-x86-64: 
+x86-64: 12133.33 microseconds
 
-x86 SIMD:
+x86 SIMD: 11333.33 microseconds
 
-CUDA:
+CUDA: 40923.0 + 482.2 (overhead) = 41405.26 microseconds
 
 **2^28**
-C:
+C: 189500.00 microseconds
 
-x86-64: 
+x86-64: 128533.33 microseconds
 
 x86 SIMD:
 
-CUDA:
+CUDA: 233690.0 + 410.7537 (overhead) = 234100.80 microseconds
 
 **Analysis**
-Unfortunately, the local PC does not reflect an accurate time taken, but the average is still taken from repeated runs.
+The average is still taken from repeated runs (30 times).
 
-The ordering of kernel run time is as follows from fastest to slowest: SIMD, CUDA, x86, and then C. This is observed from 2^24 and 2^28 elements. But for 2^20 elements, CUDA was faster than all three. The reason of this could be that the power of packed or parallel processing as many as SIMD can handle really shows its capability when dealing with a growing number of elements.
+The ordering of kernel run time is as follows from fastest to slowest: SIMD, x86, C, then CUDA. The reason of this could be that the power of packed or parallel processing as many as SIMD can handle really shows its capability when dealing with a growing number of elements.
 
+This acknowledges also that the program for x86-64 is accurate only for small numbers (tested 10,000 elements).
 
 **Screenshots**
 
@@ -44,7 +45,10 @@ C program, x86-64, SIMD YMM register, CUDA (in order)
 
 
 Small sized (10,000)
-![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/2c47f400-0db7-4d72-9102-ba015d12ffbc)
+![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/17066e83-f6a3-4f7e-865f-54f2a216c65c)
+![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/bde7a502-5e82-4727-a207-31f555560736)
+![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/34ce7f37-aaf0-4dd6-aac7-a7f3c483f705)
+
 
 Average of 30 runs:
 2^20
@@ -68,7 +72,7 @@ Average of 30 runs:
 
 ![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/c7035589-755a-4a7b-9691-f37a25f80191)
 ![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/a8d2fb97-453c-40ab-bd42-c9341a7df82a)
-
+![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/7b23cf42-bcc2-42ba-b616-79ea350a7be0)
 ![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/a0bd2e52-337f-4d03-87e7-64c23320523f)
 
 
