@@ -28,14 +28,14 @@ C: 189500.00 microseconds
 
 x86-64: 128533.33 microseconds
 
-x86 SIMD:
+x86 SIMD: 114933.33 microseconds
 
 CUDA: 233690.0 + 410.7537 (overhead) = 234100.80 microseconds
 
 **Analysis**
 The average is still taken from repeated runs (30 times).
 
-The ordering of kernel run time is as follows from fastest to slowest: SIMD, x86, C, then CUDA. The reason of this could be that the power of packed or parallel processing as many as SIMD can handle really shows its capability when dealing with a growing number of elements.
+The ordering of kernel run time is as follows from fastest to slowest: SIMD, x86, C, then CUDA. The reason of this is that the power of packed or parallel processing is demonstrated by SIMD as it can handle as many as it can, showing its capability when dealing with a growing number of elements. SIMD will always be better than x86 and C due to the fact that we are able to do multiple processes in a unit of time. SIMD also shows more flexibility while still being dependent on the CPU cores, vs CUDA that is limited with the GPU hardware and needs to consider the time transferring data between CPU and GPU. It was observed that When running only single instance CUDA was showing to be faster than C, hence further improvement on the code must be done.
 
 This acknowledges also that the program for x86-64 is accurate only for small numbers (tested 10,000 elements).
 
