@@ -57,6 +57,8 @@ Single runs:
 Average of 30 runs:
 2^20
 
+![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/c8a20486-75ad-4042-95b0-5a5e3912a508)
+
 ![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/4c084638-5750-4a50-9b62-1db4c63fd2b9)
 ![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/6561dae0-1b10-4ecf-a9f5-0eec9b4791f0)
 ![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/70155808-40d1-4d6d-a040-506d2e461abd)
