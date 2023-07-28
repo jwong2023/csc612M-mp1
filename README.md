@@ -24,7 +24,7 @@ x86 SIMD:
 CUDA:
 
 **Analysis**
-Unfortunately, the local PC does not reflect the 
+Unfortunately, the local PC does not reflect an accurate time taken, but the average is still taken from repeated runs. The consistently fastest kernel is SIMD followed by x86, and then C.
 
 
 **Screenshots**
@@ -36,7 +36,7 @@ Small sized (10,000)
 ![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/2c47f400-0db7-4d72-9102-ba015d12ffbc)
 
 2^20
-![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/2fd540fa-eef7-4a15-ba7e-50620f13e989)
+![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/2021808c-7a9b-417b-8db3-fab6196658a0)
 2^24
 ![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/1c07c42d-460b-461b-94eb-076624a08ae0)
 2^28
