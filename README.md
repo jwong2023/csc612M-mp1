@@ -33,6 +33,7 @@ x86-64
 SIMD YMM register
 
 CUDA
+![image](https://github.com/jwong2023/csc612M-mp1/assets/140816677/3d78e577-fea2-4800-8339-16046711abd1)
 
 
 
