@@ -1,0 +1,38 @@
+
+section .text
+bits 64
+default rel
+global x86_dotprod
+
+; extern void x86_dotprod(int VECTOR_SIZE, int* dp_86, int* a, int* b);
+
+x86_dotprod:
+; rcx - VECTOR_SIZE, rdx - pointer to out, r8 - pointer to in, r9 - pointer to in
+
+    ; sasm
+    xor r10, r10
+    
+    L1:
+    cmp rcx, 1
+    je END
+
+    mov rax, [r8]
+    mov rbx, [r9]
+
+    imul rax, rbx
+    add r10, rax
+    
+    mov [rdx], rax
+
+    add r8, 4
+    add r9, 4
+    add rdx, 4
+
+    jmp L1
+
+    END:
+    ;mov [rdx], rcx
+
+    ;xor rsi, rsi
+
+    ret
