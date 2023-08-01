@@ -1,0 +1,4 @@
+^C:\USERS\JANE\SOURCE\REPOS\MP_DOTPROD\ASMF1.ASM
+E:\nasm\nasm -fwin64 asmf1.asm
+^C:\USERS\JANE\SOURCE\REPOS\MP_DOTPROD\ASMF2.ASM
+E:\nasm\nasm -fwin64 asmf2.asm

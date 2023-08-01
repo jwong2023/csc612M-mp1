@@ -1,0 +1,3 @@
+﻿  main.c
+C:\Users\Jane\source\repos\mp_dotprod\main.c(146,27): warning C4018: '<': signed/unsigned mismatch
+  mp_dotprod.vcxproj -> C:\Users\Jane\source\repos\mp_dotprod\x64\Debug\mp_dotprod.exe
